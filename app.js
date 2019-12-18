@@ -8,10 +8,7 @@ app.set("view engine","ejs");
 app.get("/",function(req,res){
 	res.render("home");
 });
-app.post("/addname",function(req,res){
-	name=req.body.name;
-	res.redirect("/about");
-})
+
 app.get("/about",function(req,res){
 	res.render("about");
 	
